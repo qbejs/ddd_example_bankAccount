@@ -1,0 +1,26 @@
+{
+  "name": "teamconnect/jakubskowron-bankapp",
+  "description": "Bank account and payment system using DDD principles",
+  "type": "project",
+  "require": {
+    "php": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TeamConnect\\JakubSkowron\\BankApp\\Domain\\": "src/Domain/",
+      "TeamConnect\\JakubSkowron\\BankApp\\Application\\": "src/Application/",
+      "TeamConnect\\JakubSkowron\\BankApp\\Infrastructure\\": "src/Infrastructure/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TeamConnect\\JakubSkowron\\BankApp\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
