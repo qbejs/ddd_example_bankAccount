@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TeamConnect\JakubSkowron\BankApp\Infrastructure\Persistance;
 
 use TeamConnect\JakubSkowron\BankApp\Domain\BankAccount\Aggregate\BankAccount;

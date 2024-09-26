@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TeamConnect\JakubSkowron\BankApp\Application\UseCase;
 
 use TeamConnect\JakubSkowron\BankApp\Domain\BankAccount\Repository\BankAccountRepositoryInterface;

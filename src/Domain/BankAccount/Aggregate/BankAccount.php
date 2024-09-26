@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TeamConnect\JakubSkowron\BankApp\Domain\BankAccount\Aggregate;
 
 use TeamConnect\JakubSkowron\BankApp\Domain\BankAccount\Entity\BankAccountId;
