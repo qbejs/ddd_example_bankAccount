@@ -2,59 +2,76 @@
 
 Author: [Jakub Skowron](jakub@skowron.dev)
 
-Aplikacja PHP oparta na Domain-Driven Design (DDD) dla systemu konta bankowego i płatności.
+A PHP application based on Domain-Driven Design (DDD) for a bank account and payment system.
 
-## Wymagania
+## Requirements
 
 - PHP 8.2
 - Docker
 - Composer
 
-## Instalacja i uruchamianie testów z Docker
+## Installation and Running Tests with Docker
 
-1. Skopiuj repozytorium na lokalną maszynę:
+1. Clone the repository to your local machine:
     ```bash
-    git clone <URL-do-repozytorium>
-    cd <folder-repozytorium>
+    git clone <repository-url>
+    cd <repository-folder>
     ```
 
-2. Uruchom instalację zależności oraz budowanie projektu w kontenerze Docker:
+2. Build the Docker image and install dependencies:
     ```bash
     make install
     ```
 
-3. Aby uruchomić testy jednostkowe, wykonaj:
+3. To run unit tests, execute:
     ```bash
     make test
     ```
-   
-4. Aby zatrzymać i usunąć kontenery Docker, wykonaj:
+
+4. To stop and remove Docker containers after testing:
     ```bash
     make clean
     ```
 
-## Uruchamianie lokalne bez Docker
+## Running Locally Without Docker
 
-1. Zainstaluj zależności przy pomocy Composera:
+1. Install dependencies using Composer:
     ```bash
     composer install
     ```
 
-2. Uruchom testy jednostkowe lokalnie:
+2. Run unit tests locally:
     ```bash
     ./vendor/bin/phpunit tests
     ```
 
-## Struktura projektu
+## Project Structure
 
-- **Domain** – Logika domenowa, agregaty, encje, wartości obiektów (Value Objects), polityki.
-- **Application** – Przypadki użycia, serwisy aplikacyjne.
-- **Infrastructure** – Implementacje repozytoriów, infrastruktura techniczna.
-- **Tests** – Testy jednostkowe.
+- **Domain** – Domain logic, aggregates, entities, value objects, and policies.
+- **Application** – Use cases and application services.
+- **Infrastructure** – Implementations of repositories and other technical infrastructure.
+- **Tests** – Unit tests.
 
-## Testowanie
+## Testing
 
-Testy jednostkowe można uruchomić w Dockerze, używając:
+You can run unit tests in Docker by following these steps:
+
+1. Build the Docker image:
+    ```bash
+    make install
+    ```
+
+2. Run the container and execute the tests:
+    ```bash
+    make test
+    ```
+
+3. Stop and remove the container after tests:
+    ```bash
+    make clean
+    ```
+
+Alternatively, you can run the tests locally without Docker using:
 
 ```bash
-make test
+./vendor/bin/phpunit tests
